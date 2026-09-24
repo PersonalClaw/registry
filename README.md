@@ -55,6 +55,13 @@ The validator imports core's manifest parser and core's scanner instead of
 reimplementing either, so what the registry checks and what your install gate checks
 cannot drift apart.
 
+## Licence
+
+MIT — see [LICENSE](LICENSE). That covers this repository: the listing data, its
+schema, and the validator. It says nothing about any **listed** app, each of which
+carries its own licence — the validator blocks a listing whose repo has no licence
+file, whose `app.json` declares none, or whose row disagrees with either.
+
 ## Regenerating the schema
 
 ```bash
