@@ -131,10 +131,11 @@ file could not be read at all.
 
 ## Provenance of this policy
 
-The rules above are the community-listing front door for PersonalClaw. The
-`ECOSYSTEM-TOOLING` roadmap plan fixed four of them — manifest fetch and parse, repo
-liveness, license present, and a recorded scanner dry-run where `dangerous` blocks and
-`warning` never does. The rest (a closed row schema, exact row↔manifest agreement on
-`types`/`permissions_declared`, unique kebab-case names, `https`-only repository URLs,
-and the maintainer expectations) are stated here for the first time, so that
-`validate_registry.py` implements a written policy rather than an implied one.
+The rules above are the community-listing front door for PersonalClaw. Four of them
+check what a listing has to be before PersonalClaw offers it at all: its manifest
+fetches and parses, its repository is live, it carries a license, and a scanner dry-run
+is recorded, where `dangerous` blocks and `warning` never does. The rest (a closed row
+schema, exact row↔manifest agreement on `types`/`permissions_declared`, unique
+kebab-case names, `https`-only repository URLs, and the maintainer expectations) are
+stated here for the first time, so that `validate_registry.py` implements a written
+policy rather than an implied one.
